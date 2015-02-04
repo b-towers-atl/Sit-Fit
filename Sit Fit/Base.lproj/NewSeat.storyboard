@@ -16,6 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V06-4h-rAY">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="1LG-Dn-lLw"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMz-32-LhM">
                                 <rect key="frame" x="310" y="540" width="270" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.70859375000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -52,14 +58,33 @@
                                     <action selector="cancelSeat:" destination="MrQ-Or-uH2" eventType="touchUpInside" id="QbD-dY-sVM"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKq-Qa-59O">
+                                <rect key="frame" x="20" y="240" width="560" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Z3Y-97-ZSC"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePicture:" destination="MrQ-Or-uH2" eventType="touchUpInside" id="7vM-4p-RbN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="LKq-Qa-59O" secondAttribute="trailing" constant="20" id="5QJ-ZP-goJ"/>
                             <constraint firstItem="yr3-OE-25D" firstAttribute="width" secondItem="jMz-32-LhM" secondAttribute="width" id="9Dx-P6-0Ye"/>
                             <constraint firstItem="3zb-1g-EbB" firstAttribute="top" secondItem="jMz-32-LhM" secondAttribute="bottom" constant="20" id="C0M-Cu-gDX"/>
                             <constraint firstItem="jMz-32-LhM" firstAttribute="leading" secondItem="yr3-OE-25D" secondAttribute="trailing" constant="20" id="F3c-7j-H6F"/>
+                            <constraint firstItem="V06-4h-rAY" firstAttribute="top" secondItem="yzc-xe-oGx" secondAttribute="top" id="Idx-8m-dTq"/>
+                            <constraint firstItem="LKq-Qa-59O" firstAttribute="leading" secondItem="yzc-xe-oGx" secondAttribute="leading" constant="20" id="JZ4-jU-gZc"/>
+                            <constraint firstItem="V06-4h-rAY" firstAttribute="leading" secondItem="yzc-xe-oGx" secondAttribute="leading" id="L2g-BL-BxZ"/>
                             <constraint firstItem="yr3-OE-25D" firstAttribute="leading" secondItem="yzc-xe-oGx" secondAttribute="leading" constant="20" id="Tth-N9-VHb"/>
+                            <constraint firstItem="LKq-Qa-59O" firstAttribute="top" secondItem="yzc-xe-oGx" secondAttribute="top" constant="240" id="du0-ly-oCs"/>
                             <constraint firstItem="rUC-FG-x6d" firstAttribute="leading" secondItem="yzc-xe-oGx" secondAttribute="leading" constant="20" id="kLt-k9-14u"/>
+                            <constraint firstAttribute="trailing" secondItem="V06-4h-rAY" secondAttribute="trailing" id="nfW-cr-0eF"/>
                             <constraint firstItem="3zb-1g-EbB" firstAttribute="top" secondItem="yr3-OE-25D" secondAttribute="bottom" constant="20" id="pas-km-Hyf"/>
                             <constraint firstAttribute="trailing" secondItem="jMz-32-LhM" secondAttribute="trailing" constant="20" id="pbu-O4-0yl"/>
                             <constraint firstAttribute="trailing" secondItem="rUC-FG-x6d" secondAttribute="trailing" constant="20" id="qUF-aX-3sE"/>
@@ -67,6 +92,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="seatImageView" destination="V06-4h-rAY" id="F3V-T7-ihg"/>
                         <outlet property="seatNameField" destination="rUC-FG-x6d" id="I1p-OA-qQT"/>
                     </connections>
                 </viewController>

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B643ED4E1A81522300C1874B /* NewSeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B643ED4D1A81522300C1874B /* NewSeatViewController.swift */; };
 		B643ED551A81548600C1874B /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B643ED501A81548600C1874B /* Bolts.framework */; };
-		B643ED561A81548600C1874B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B643ED511A81548600C1874B /* Parse.framework */; };
 		B643ED571A81548600C1874B /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B643ED521A81548600C1874B /* ParseCrashReporting.framework */; };
 		B643ED581A81548600C1874B /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B643ED531A81548600C1874B /* ParseFacebookUtils.framework */; };
 		B643ED591A81548600C1874B /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B643ED541A81548600C1874B /* ParseUI.framework */; };
@@ -27,6 +26,7 @@
 		B65B89131A8116FA00A25B81 /* NewSeat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65B89111A8116FA00A25B81 /* NewSeat.storyboard */; };
 		B65B89191A81314300A25B81 /* MyFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B89181A81314300A25B81 /* MyFeedTableViewController.swift */; };
 		B65B891C1A81318400A25B81 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B891B1A81318400A25B81 /* FeedTableViewController.swift */; };
+		B6BC769A1A825FC000153A4C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B643ED511A81548600C1874B /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,10 +75,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B643ED661A81577800C1874B /* libsqlite3.dylib in Frameworks */,
+				B6BC769A1A825FC000153A4C /* Parse.framework in Frameworks */,
 				B643ED641A81575900C1874B /* SystemConfiguration.framework in Frameworks */,
 				B643ED621A81574500C1874B /* MobileCoreServices.framework in Frameworks */,
 				B643ED5E1A81571000C1874B /* AudioToolbox.framework in Frameworks */,
-				B643ED561A81548600C1874B /* Parse.framework in Frameworks */,
 				B643ED571A81548600C1874B /* ParseCrashReporting.framework in Frameworks */,
 				B643ED591A81548600C1874B /* ParseUI.framework in Frameworks */,
 				B643ED581A81548600C1874B /* ParseFacebookUtils.framework in Frameworks */,

@@ -12,13 +12,42 @@ class FeedTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+//        refreshFeed()
+        // we can comment this out because viewWillAppear will run
+        
     }
+    
+    func refreshFeed() {
+        
+        FeedData.mainData().refreshFeedItems { () -> () in
+            
+            // this is a time capsule, it is passed after the request finishes
+            self.tableView.reloadData()
+            
+        }
+    
+    }
+    
+    // this isn't the best way because when you switch in between
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        refreshFeed()
+        
+    }
+    
+    // viewWillAppear will rerun when pop and dismisses occur
+//    override func viewWillAppear(animated: Bool) {
+//        
+//        FeedData.mainData().refreshFeedItems { () -> () in
+//            
+//            // this is a time capsule, it is passed after the request finishes
+//            self.tableView.reloadData()
+//            
+//        }
+//        
+//    }
     
     @IBAction func addNewSeat(sender: AnyObject) {
     

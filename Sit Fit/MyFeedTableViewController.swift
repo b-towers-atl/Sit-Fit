@@ -9,5 +9,16 @@
 import UIKit
 
 class MyFeedTableViewController: FeedTableViewController {
-   
+
+    override func refreshFeed() {
+        
+        FeedData.mainData().refreshMyFeedItems { () -> () in
+            
+            // this is a time capsule, it is passed after the request finishes
+            self.tableView.reloadData()
+            
+        }
+        
+    }
+    
 }

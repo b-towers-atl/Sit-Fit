@@ -99,7 +99,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="feedCell" rowHeight="200" id="Xm0-e3-VSf">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="feedCell" rowHeight="200" id="Xm0-e3-VSf" customClass="FeedCell" customModule="Sit_Fit" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xm0-e3-VSf" id="d4O-qA-5DO">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -110,6 +110,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="feedImageView" destination="Onp-OI-vsB" id="X8a-Hb-ncq"/>
                                     <segue destination="iWp-Ug-QHx" kind="show" id="vz0-uL-BRn"/>
                                 </connections>
                             </tableViewCell>

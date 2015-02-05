@@ -27,6 +27,7 @@
 		B65B89191A81314300A25B81 /* MyFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B89181A81314300A25B81 /* MyFeedTableViewController.swift */; };
 		B65B891C1A81318400A25B81 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B891B1A81318400A25B81 /* FeedTableViewController.swift */; };
 		B6BC769A1A825FC000153A4C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B643ED511A81548600C1874B /* Parse.framework */; };
+		B6BC769C1A82CF4E00153A4C /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BC769B1A82CF4E00153A4C /* FeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		B65B89121A8116FA00A25B81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NewSeat.storyboard; sourceTree = "<group>"; };
 		B65B89181A81314300A25B81 /* MyFeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyFeedTableViewController.swift; sourceTree = "<group>"; };
 		B65B891B1A81318400A25B81 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		B6BC769B1A82CF4E00153A4C /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 				B65B88F11A810FCE00A25B81 /* LoginViewController.swift */,
 				B65B891B1A81318400A25B81 /* FeedTableViewController.swift */,
 				B65B89181A81314300A25B81 /* MyFeedTableViewController.swift */,
+				B6BC769B1A82CF4E00153A4C /* FeedCell.swift */,
 			);
 			name = "Main Feeds & Login";
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6BC769C1A82CF4E00153A4C /* FeedCell.swift in Sources */,
 				B65B89191A81314300A25B81 /* MyFeedTableViewController.swift in Sources */,
 				B65B891C1A81318400A25B81 /* FeedTableViewController.swift in Sources */,
 				B65B88F21A810FCE00A25B81 /* LoginViewController.swift in Sources */,

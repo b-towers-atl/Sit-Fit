@@ -14,8 +14,8 @@ homework :
 +1. when you hit save on a new seat, create a PFFile using the UIImage on the seatImageView
 +2. make the tableviewcell height 200
 +3. add a uiimageview to the prototype cell on the storyboard
--4. create a custom class for the uitableviewcell named FeedCell
--5. add an iboutlet to the class for the uiimageview
++4. create a custom class for the uitableviewcell named FeedCell
++5. add an iboutlet to the class for the uiimageview
 -6. set the image for the imageview based on the PFFile from the Seat PFObject
 
 */

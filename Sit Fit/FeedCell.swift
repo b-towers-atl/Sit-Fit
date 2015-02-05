@@ -25,7 +25,7 @@ class FeedCell: UITableViewCell {
                 if error == nil {
                     
                     let image = UIImage(data:imageData)
-                    seatImageView.image = image
+                    self.seatImageView.image = image
                     
                 }
                 

@@ -27,7 +27,10 @@
 		B65B89131A8116FA00A25B81 /* NewSeat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65B89111A8116FA00A25B81 /* NewSeat.storyboard */; };
 		B65B89191A81314300A25B81 /* MyFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B89181A81314300A25B81 /* MyFeedTableViewController.swift */; };
 		B65B891C1A81318400A25B81 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B891B1A81318400A25B81 /* FeedTableViewController.swift */; };
+		B679D1541A83FB1800541CC2 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B679D1531A83FB1800541CC2 /* MapViewController.swift */; };
 		B6A629C41A83B41500838BA8 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A629C31A83B41500838BA8 /* FeedCell.swift */; };
+		B6A629C61A83CF3C00838BA8 /* FourSquareRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A629C51A83CF3C00838BA8 /* FourSquareRequest.swift */; };
+		B6A629C81A83CFA600838BA8 /* VenuesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A629C71A83CFA600838BA8 /* VenuesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +71,10 @@
 		B65B89121A8116FA00A25B81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NewSeat.storyboard; sourceTree = "<group>"; };
 		B65B89181A81314300A25B81 /* MyFeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyFeedTableViewController.swift; sourceTree = "<group>"; };
 		B65B891B1A81318400A25B81 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		B679D1531A83FB1800541CC2 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		B6A629C31A83B41500838BA8 /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		B6A629C51A83CF3C00838BA8 /* FourSquareRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourSquareRequest.swift; sourceTree = "<group>"; };
+		B6A629C71A83CFA600838BA8 /* VenuesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				B643ED681A815B7B00C1874B /* FeedData.swift */,
+				B6A629C51A83CF3C00838BA8 /* FourSquareRequest.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -191,6 +198,7 @@
 				B65B891B1A81318400A25B81 /* FeedTableViewController.swift */,
 				B65B89181A81314300A25B81 /* MyFeedTableViewController.swift */,
 				B6A629C31A83B41500838BA8 /* FeedCell.swift */,
+				B679D1531A83FB1800541CC2 /* MapViewController.swift */,
 			);
 			name = "Main Feeds & Login";
 			sourceTree = "<group>";
@@ -200,6 +208,7 @@
 			children = (
 				B65B89111A8116FA00A25B81 /* NewSeat.storyboard */,
 				B643ED4D1A81522300C1874B /* NewSeatViewController.swift */,
+				B6A629C71A83CFA600838BA8 /* VenuesTableViewController.swift */,
 			);
 			name = "New Seat";
 			sourceTree = "<group>";
@@ -305,13 +314,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6A629C61A83CF3C00838BA8 /* FourSquareRequest.swift in Sources */,
 				B6A629C41A83B41500838BA8 /* FeedCell.swift in Sources */,
 				B65B89191A81314300A25B81 /* MyFeedTableViewController.swift in Sources */,
+				B679D1541A83FB1800541CC2 /* MapViewController.swift in Sources */,
 				B65B891C1A81318400A25B81 /* FeedTableViewController.swift in Sources */,
 				B65B88F21A810FCE00A25B81 /* LoginViewController.swift in Sources */,
 				B643ED691A815B7B00C1874B /* FeedData.swift in Sources */,
 				B643ED4E1A81522300C1874B /* NewSeatViewController.swift in Sources */,
 				B65B88F01A810FCE00A25B81 /* AppDelegate.swift in Sources */,
+				B6A629C81A83CFA600838BA8 /* VenuesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -99,12 +99,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="feedCell" id="Xm0-e3-VSf">
+                            <tableViewCell contentMode="scaleAspectFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="feedCell" rowHeight="200" id="Xm0-e3-VSf" customClass="FeedCell" customModule="Sit_Fit" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xm0-e3-VSf" id="d4O-qA-5DO">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HTp-gn-4yi">
+                                            <rect key="frame" x="10" y="10" width="180" height="180"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seat Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8NZ-rz-96B">
+                                            <rect key="frame" x="198" y="10" width="234" height="42"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="seatImageView" destination="HTp-gn-4yi" id="2Um-Tn-AbY"/>
+                                    <outlet property="seatNameLabel" destination="8NZ-rz-96B" id="D76-iq-bWg"/>
                                     <segue destination="iWp-Ug-QHx" kind="show" id="vz0-uL-BRn"/>
                                 </connections>
                             </tableViewCell>
@@ -124,7 +137,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GMQ-fl-bUj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1990" y="-61"/>
+            <point key="canvasLocation" x="1990" y="-64"/>
         </scene>
         <!--All Seats-->
         <scene sceneID="AoB-GA-asb">
@@ -152,13 +165,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="8Zc-ke-BJO">
+                            <tableViewCell contentMode="scaleAspectFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="feedCell" rowHeight="200" id="Acc-kr-PgC" customClass="FeedCell" customModule="Sit_Fit" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Zc-ke-BJO" id="j4L-iy-RTX">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Acc-kr-PgC" id="FLm-2z-Yf9">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seat Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghQ-0l-z1k">
+                                            <rect key="frame" x="198" y="10" width="234" height="42"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sbZ-vw-saW">
+                                            <rect key="frame" x="10" y="10" width="180" height="180"/>
+                                        </imageView>
+                                    </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="MfO-e7-QJm" kind="show" id="dmM-qG-nYB"/>
+                                    <outlet property="seatImageView" destination="sbZ-vw-saW" id="Lbo-5O-Ecm"/>
+                                    <outlet property="seatNameLabel" destination="ghQ-0l-z1k" id="OSP-Pt-doe"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
